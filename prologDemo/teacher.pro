@@ -1,0 +1,12 @@
+predicates
+	teacher(symbol,symbol)
+	askteacher(symbol,symbol)
+	classmate(symbol,symbol)
+clauses
+	teacher(li,wang).
+	classmate(zhang,li).
+	askteacher(X,Y):-
+		classmate(X,Z),
+		teacher(Z,Y).
+goal
+	askteacher(zhang,R).

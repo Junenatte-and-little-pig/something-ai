@@ -1,0 +1,12 @@
+predicates
+	even(integer)
+clauses
+	even(0):-write("success").
+	even(1):-write("fail").
+	even(A):-
+		B=A-2,
+		even(B).
+goal
+	write("input a nuber"),nl,
+	readint(NM),
+	even(NM).

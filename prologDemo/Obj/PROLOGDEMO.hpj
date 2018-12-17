@@ -1,0 +1,20 @@
+[OPTIONS]
+WARNING=3
+REPORT=ON
+ROOT=E:\Github\something-ai\prologDemo\Obj
+BMROOT=E:\Github\something-ai\prologDemo\Res\Win
+ERRORLOG=E:\Github\something-ai\prologDemo\Obj\HLPBUGS.TXT
+COPYRIGHT=Built using Visual Prolog Help Maker
+TITLE=prologDemo
+COMPRESS=false
+CONTENTS=idh_Contents
+
+[FILES]
+E:\Github\something-ai\prologDemo\Obj\PROLOGDEMO.RTF
+[WINDOWS]
+main=,,0,(255,255,255),(192,192,192),0
+[CONFIG]
+
+
+[MAP]
+idh_Contents 1
