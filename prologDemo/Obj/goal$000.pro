@@ -1,12 +1,17 @@
 predicates
-	even(integer)
+	teacher(symbol,symbol)
+	classmate(symbol,symbol)
 clauses
-	even(0).
-	even(1).
-	even(A):-
-		B=A-2,
-		even(B).
+	teacher(li,wang).
+	classmate(zhang,li).
+	teacher(X,Y):-
+		classmate(X,Z),
+		teacher(Z,Y).
+	/*classmate(X,Y):-
+		teacher(X,Z),
+		teacher(Y,Z).*/
+	teacher(X,Y):-
+		classmate(Z,X),
+		teacher(Z,Y).
 goal
-	write("input a nuber"),nl,
-	readint(NM),
-	even(NM).
+	teacher(zhang,R).
