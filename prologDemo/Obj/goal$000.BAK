@@ -4,10 +4,10 @@ predicates
 clauses
 	teacher(li,wang).
 	classmate(zhang,li).
-	/*teacher(X,Y):-
+	teacher(X,Y):-
 		classmate(X,Z),
 		teacher(Z,Y).
-	classmate(X,Y):-
+	/*classmate(X,Y):-
 		teacher(X,Z),
 		teacher(Y,Z).*/
 	teacher(X,Y):-

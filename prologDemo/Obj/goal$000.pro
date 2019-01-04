@@ -1,17 +1,10 @@
+domains
 predicates
-	teacher(symbol,symbol)
-	classmate(symbol,symbol)
+   teacher(symbol,symbol)
+   classmate(symbol,symbol)
 clauses
-	teacher(li,wang).
-	classmate(zhang,li).
-	teacher(X,Y):-
-		classmate(X,Z),
-		teacher(Z,Y).
-	/*classmate(X,Y):-
-		teacher(X,Z),
-		teacher(Y,Z).*/
-	teacher(X,Y):-
-		classmate(Z,X),
-		teacher(Z,Y).
+   classmate(li, zhang).
+   teacher(wang, li).
+   teacher(Z, Y):- classmate(X, Y), teacher(Z, X).
 goal
-	teacher(zhang,R).
+   teacher(U,zhang). 
